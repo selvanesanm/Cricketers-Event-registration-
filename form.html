@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration for meet</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body class="lov" bgcolor="black" style="color: white">
+        <header class="site-header">
+            <div class="nav-wrap">
+                <div class="logo">Cricketers Meet Up</div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="home.html">Home</a>
+                    <a href="form.html">Register</a>
+                    <a href="jersey.html">Jersey</a>
+                </nav>
+            </div>
+        </header>
+        <center>
+            <h1 style="color: rgb(226, 13, 13)">CRICKETERS MEET UP</h1>
+            <hr>
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                Be part of a special cricket celebration.<br>
+                Meet the legend, feel the energy, and celebrate the spirit of the game.
+            </p>
+            <h2>Featured Cricketers</h2>
+            <ul class="cricketer-list">
+                <li>Virat Kohli</li>
+                <li>Mahendra Singh Dhoni</li>
+                <li>Rohit Sharma</li>
+                <li>Vaibhav Suryavanshi</li>
+                <li>Jasprit Bumrah</li>
+                <li>KL Rahul</li>
+                <li>Shubman Gill</li>
+                <li>Hardik Pandya</li>
+                <li>Ravindra Jadeja</li>
+                <li>Rishabh Pant</li>
+            </ul>
+        </center>
+
+        <main class="registration-page">
+            <section class="registration-card" aria-labelledby="registration-title">
+                <div class="registration-intro">
+                    <p class="eyebrow">SECURE EVENT REGISTRATION</p>
+                    <h1 id="registration-title">Save your seat at the meet-up</h1>
+                    <p>Complete the form below. We will use your details only for event updates and entry confirmation.</p>
+                    <div class="registration-note">
+                        <strong>What you get</strong>
+                        <span>Event access, a complimentary jersey, and a day with cricket fans.</span>
+                    </div>
+                </div>
+
+                <form class="registration-form" action="#" method="post">
+                    <div class="form-grid">
+                        <div class="field-group field-wide">
+                            <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+                            <input id="full-name" name="full_name" type="text" placeholder="Enter your full name" autocomplete="name" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="email">Email address <span aria-hidden="true">*</span></label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+                            <input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" autocomplete="tel" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="age">Age <span aria-hidden="true">*</span></label>
+                            <input id="age" name="age" type="number" min="5" max="100" placeholder="Your age" required>
+                        </div>
+
+                        <fieldset class="field-group gender-group">
+                            <legend>Gender <span aria-hidden="true">*</span></legend>
+                            <label><input type="radio" name="gender" value="Male" required> Male</label>
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                            <label><input type="radio" name="gender" value="Other"> Other</label>
+                        </fieldset>
+
+                        <div class="field-group">
+                            <label for="pass-type">Choose your pass <span aria-hidden="true">*</span></label>
+                            <select id="pass-type" name="pass_type" required>
+                                <option value="" selected disabled>Select a pass</option>
+                                <option value="Student Entry">Student Entry - INR 300</option>
+                                <option value="Normal Entry">Normal Entry - INR 500</option>
+                                <option value="VIP Pass">VIP Pass - INR 1500</option>
+                            </select>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="city">City <span aria-hidden="true">*</span></label>
+                            <input id="city" name="city" type="text" placeholder="Your city" autocomplete="address-level2" required>
+                        </div>
+                    </div>
+
+                    <label class="terms-check">
+                        <input name="terms_accepted" type="checkbox" value="yes" required>
+                        <span>I agree to receive event-related updates and confirm that these details are correct.</span>
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="submit-button" type="submit">Complete registration</button>
+                        <button class="reset-button" type="reset">Clear form</button>
+                    </div>
+                    <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+                    <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2025 Cricketers Meet Up</p>
+            <nav aria-label="Footer navigation">
+                <a href="home.html">Home</a>
+                <a href="form.html">Register</a>
+                <a href="jersey.html">Jersey</a>
+            </nav>
+        </footer>
+        <script src="form.js" defer></script>
+    </body>
+</html>

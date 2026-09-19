@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    margin: 30px 30px 0;
+    padding: 0;
+}
+
+.full {
+    background-image: url(img/nj.avi);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:silver;
+}
+
+.site-header {
+    background: #1d2b3a;
+    padding: 16px 30px;
+    color: white;
+}
+
+.nav-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.main-nav a,
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    background: #111827;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 30px;
+}
+
+.site-footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 8px;
+}
+
+.yt {
+    color: #000;
+}
+
+.jersey-price {
+    margin: 10px 0;
+    color: #167a45;
+    font-weight: bold;
+}
+
+.size-choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 12px 10px;
+    color: #111;
+    font-weight: bold;
+    text-align: left;
+}
+
+.size-choice select {
+    min-width: 92px;
+    padding: 6px 8px;
+    border: 1px solid #aebdca;
+    border-radius: 4px;
+    background: white;
+    color: #111;
+    font: inherit;
+}
+
+input {
+    width: 900px;
+    max-width: 90%;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.be {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.be label {
+    display: block;
+    margin-bottom: 10px;
+    color: #111;
+    font-weight: bold;
+}
+
+.search-message {
+    min-height: 20px;
+    margin-top: 10px;
+    color: #111;
+}
+
+.ss,
+.o,
+.i,
+.jj {
+    border: 2px solid rgb(19, 115, 206);
+    display: inline-block;
+    width: 220px;
+    margin: 40px;
+    vertical-align: top;
+}
+
+.c {
+    text-align: center;
+    margin: 50px;
+}
+
+.about-text {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.l {
+    margin: 70px;
+}
+
+.fr {
+    color: rgb(19, 115, 206);
+}
+
+.fr:hover {
+    color: rgb(182, 130, 35);
+}
+
+.buy-link {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 8px 16px;
+    background-color: rgb(19, 115, 206);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.buy-link:hover {
+    background-color: rgb(182, 130, 35);
+}

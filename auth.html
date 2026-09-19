@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register | Cricketers Meet Up</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-intro">
+            <a class="brand" href="home.html">Cricketers Meet Up</a>
+            <p class="small-heading">WELCOME TO THE COMMUNITY</p>
+            <h1>Every cricket fan has a story.</h1>
+            <p>Sign in to continue, or create a new account to keep your event details in one place.</p>
+            <a class="back-link" href="home.html">Back to home</a>
+        </section>
+
+        <section class="auth-box" aria-label="Account access">
+            <div class="tab-buttons">
+                <button class="tab-button active" type="button" data-form="login-form">Login</button>
+                <button class="tab-button" type="button" data-form="register-form">Create account</button>
+            </div>
+
+            <form id="login-form" class="auth-form" action="#" method="post">
+                <h2>Welcome back</h2>
+                <p class="form-help">Use your email and password to continue.</p>
+
+                <label for="login-email">Email address</label>
+                <input id="login-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required>
+
+                <label class="check-row">
+                    <input type="checkbox" name="remember_me">
+                    Remember me
+                </label>
+
+                <button class="main-button" type="submit">Login</button>
+                <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+
+            <form id="register-form" class="auth-form hidden" action="#" method="post">
+                <h2>Create your account</h2>
+                <p class="form-help">It only takes a minute to join us.</p>
+
+                <label for="register-name">Full name</label>
+                <input id="register-name" name="full_name" type="text" placeholder="Your full name" autocomplete="name" required>
+
+                <label for="register-email">Email address</label>
+                <input id="register-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                <label for="register-password">Create password</label>
+                <input id="register-password" name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+
+                <label class="check-row">
+                    <input type="checkbox" name="agree" required>
+                    I agree to the terms and conditions.
+                </label>
+
+                <button class="main-button" type="submit">Create account</button>
+                <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html>
